@@ -1,7 +1,6 @@
-import { describe, expect, it } from 'vitest';
+import test from 'node:test';
+import assert from 'node:assert/strict';
 
-describe('baseline', () => {
-  it('runs successfully', () => {
-    expect(2 + 2).toBe(4);
-  });
+test('baseline test runner works', () => {
+  assert.equal(2 + 2, 4);
 });
